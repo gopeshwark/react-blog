@@ -1,0 +1,48 @@
+.navbar {
+	display: flex;
+	padding: 10px 0;
+	justify-content: space-between;
+}
+
+.navbar__menu {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar__menu > li {
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar__menu > li > a {
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	text-transform: capitalize;
+	font-weight: 400;
+	color: #565673;
+	padding: 0 10px;
+}
+
+.navbar__search > form {
+	display: flex;
+	margin: 0 10px;
+}
+
+.navbar__searchInput {
+	border: 0;
+	width: 0;
+	transition: width 0.2s ease-in;
+}
+
+.navbar__searchInput.active {
+	width: 150px;
+}
+
+.navbar__searchInput:focus {
+	outline: none;
+}
+
+.navbar__searchIcon {
+	cursor: pointer;
+}
