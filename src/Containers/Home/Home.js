@@ -1,10 +1,13 @@
 import React from 'react';
 import './Home.css';
+import Card from '../../Components/UI/Card/Card';
 
 function Home(props) {
     return (
         <div>
-            Home
+            <Card>
+                Post Gallary
+            </Card>
         </div>
     )
 }
