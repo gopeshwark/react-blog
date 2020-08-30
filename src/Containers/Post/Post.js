@@ -1,16 +1,17 @@
 import React from 'react';
 import './Post.css';
 import BlogPost from '../../Components/BlogPost/BlogPost';
-import Sidebar from '../../Components/Sidebar/Sidebar';
+import Layout from '../../Components/Layout/Layout';
 
 function Post(props) {
 
     
     return (
-        <section className="post__container">
+        
+        <Layout>
             <BlogPost {...props} />
-            <Sidebar />
-        </section>
+        </Layout>
+        
     )
 }
 

@@ -6,19 +6,18 @@ import blogData from '../../data/blogPost.json';
 function BlogPost(props) {
     
     const [post, setPost] = useState({});
-    const [postId, setPostId] = useState('');
+    const [postSlug, setPostSlug] = useState('');
 
     useEffect(() => {
-        const postId = props.match.params.postId;
-        const cPost = blogData.data.find(data => data.id == postId);
+        const postSlug = props.match.params.postSlug;
+        const cPost = blogData.data.find(data => data.slug === postSlug);
     
         setPost(cPost);
            
-        setPostId(postId)
-    }, [post, props.match.params.postId]);
+        setPostSlug(postSlug)
+    }, [post, props.match.params.postSlug]);
 
-    // const aaaa = post.blogImage ? require(`../../Assets/blogPostImages/${post.blogImage}`) : null;
-    console.log(post);
+   
     
 
     return (      

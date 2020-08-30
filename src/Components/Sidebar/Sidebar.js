@@ -44,7 +44,7 @@ function Sidebar(props) {
                 <div className="sidebar__recentPosts">
                     {
                         posts.map(post => (
-                            <NavLink key={post.id} to={`/post/${post.id}`}>
+                            <NavLink key={post.id} to={`/post/${post.slug}`}>
                                 <div className="sidebar__recentPost">
                                     <h3>{post.blogTitle}</h3>
                                     <span>{post.postedOn}</span>
